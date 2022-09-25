@@ -1,7 +1,7 @@
 GET http://localhost:3000/mahasiswa
 
 ###
-GET http://localhost:3000/mahasiswa/2
+GET http://localhost:3000/mahasiswa/1
 
 ###
 POST http://localhost:3000/mahasiswa
@@ -9,5 +9,14 @@ Content-Type: application/json
 
 {
     "name":"Ahmad Muzaki SA", 
+    "address": "Karangcengek"
+}
+
+###
+PATCH http://localhost:3000/mahasiswa/1
+Content-Type: application/json
+
+{
+    "name":"Ahmad Muzaki Salman Alfaris", 
     "address": "Karangcengek"
 }
